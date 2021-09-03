@@ -31,6 +31,12 @@ my_car = {
   "interest": 22
 }
 
+my_other_cars = {
+  "first_car" : my_car,
+  "second_car" : "Ford Pinto",
+  "third_car" : 24
+}
+
 # Dictionary items are ordered, changeable, and does not allow duplicates.
 
 print(my_car)
