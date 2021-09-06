@@ -13,11 +13,23 @@ inventory = {
 # SCENARIO: A person came in and bought one of everything!
 
 for item in inventory:
+    inventory[item] -= 1
+    print(inventory[item])
+
     # decrement item by using an assignment operator (Day 2 Lecture line #130)
 
     # NOTE: recall that item represents the key of the key:value pair
 
+# x = len(inventory)
+
+
 # SCENARIO: REMOVE ANY 0 ITEMS
 
-for item in inventory:
+for item in list(inventory):
+    inventory[item] -= 1
+    if inventory[item] < 1: 
+        del inventory[item]
+
+print(inventory)
+    
     # use an if statement to check if the value is 0 and then remove it
